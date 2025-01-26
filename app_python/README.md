@@ -55,5 +55,5 @@ app_python/
 - Verify the time updates on refresh manually.
 
 ## .gitignore
-Ensure the following are ignored:
+Ensure the following are ignored (if you want to contribute :)):
 - `venv/` (virtual environment files)
