@@ -47,18 +47,6 @@ This Python web application displays the current time in Moscow. It uses the Fla
 
 2. Open a browser and visit `http://127.0.0.1:5000/`.
 
-### Project Structure
-
-```bash
-app_python/
-├── main.py               # Main Flask application
-├── templates/
-│   └── index.html        # HTML template
-├── requirements.txt      # Required dependencies
-├── README.md             # Project documentation
-└── PYTHON.md             # Coding standards and best practices
-```
-
 ## Docker
 
 ### How to build?
@@ -87,12 +75,14 @@ app_python/
 
 ## Testing
 
+### Runtime testing
+
 - Verify the time updates on refresh manually.
 
-## .gitignore
+### Unit tests
 
-Ensure the following are ignored (if you want to contribute :)):
+- To run unit tests run:
 
-- `venv/` (virtual environment files)
-
-# App Python CI ![CI](https://github.com/yoqub-davlatov/S25-core-course-labs/actions/workflows/app_python_ci.yml/badge.svg?branch=lab3)
+```bash
+   pytest 
+   ```

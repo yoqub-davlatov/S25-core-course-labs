@@ -19,3 +19,29 @@ PEP 8 was followed as coding standards. Proper naming convention was used.
 ## Code quality
 
 The program structure is divided into multiple functions for maintainability.
+
+## Unit Tests
+
+### Overview
+
+- App Initialization: Ensures Flask initializes correctly.
+
+- Home Route (/): Checks response (200 OK) and valid timestamp format.
+
+- Template Rendering: Confirms index.html displays Moscow time.
+
+- Timezone Handling: Verifies correct localization to Europe/Moscow.
+
+### Best Practices
+
+Isolation: Independent tests without external dependencies.
+
+Fixtures: Used for clean test setup and teardown.
+
+Assertions: Validates responses and content.
+
+Mocking: Ensures predictable datetime results.
+
+CI Integration: Runs in GitHub Actions for continuous validation.
+
+By following these practices, we ensure the Flask app is reliable and maintainable.
