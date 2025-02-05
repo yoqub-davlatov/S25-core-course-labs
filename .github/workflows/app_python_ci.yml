@@ -44,6 +44,7 @@ jobs:
   check-linter:
     runs-on: ubuntu-latest
     needs: build
+
     steps:
       - name: Run linter
         run: |
@@ -53,6 +54,7 @@ jobs:
   run-tests:
     runs-on: ubuntu-latest
     needs: build
+
     steps:
       - name: Run tests
         run: |
@@ -61,6 +63,7 @@ jobs:
 
   security:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
