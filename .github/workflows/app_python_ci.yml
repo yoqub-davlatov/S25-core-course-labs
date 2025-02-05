@@ -60,6 +60,8 @@ jobs:
         uses: snyk/actions/python-3.8@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          args: --skip-unresolved --file=app_python/requirements.txt --package-manager=pip
 
   docker:
     runs-on: ubuntu-latest
