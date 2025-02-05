@@ -20,8 +20,7 @@
 
 ## 5. Copy application files separately
 
-- **`COPY main.py main.py`**  
-- **`COPY templates/ templates/`**  
+- **`COPY src/ src/`**
 
 ## 6. Adjust ownership of files  
 
