@@ -4,13 +4,13 @@ on:
   push:
     branches:
       - main
+      - lab3
     paths:
       - ".github/workflows/app_python_ci.yml"
       - "app_python/**"
   pull_request:
     branches:
       - main
-      - lab3
     paths:
       - ".github/workflows/app_python_ci.yml"
       - "app_python/**"
