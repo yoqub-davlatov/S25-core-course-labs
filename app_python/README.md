@@ -95,4 +95,4 @@ Ensure the following are ignored (if you want to contribute :)):
 
 - `venv/` (virtual environment files)
 
-# App Python CI ![CI](https://github.com/yoqub-davlatov/S25-core-course-labs/actions/workflows/app_python_ci.yml/badge.svg)
+# App Python CI ![CI](https://github.com/yoqub-davlatov/S25-core-course-labs/actions/workflows/app_python_ci.yml/badge.svg?branch=lab3)
