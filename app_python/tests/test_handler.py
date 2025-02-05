@@ -34,5 +34,6 @@ def test_homepage_timezone(server, captured_templates):
     expected_time = datetime.now(moscow_tz).strftime("%Y-%m-%d %H:%M:%S")
     response_time = context['current_time']
 
-    assert abs(datetime.strptime(response_time, "%Y-%m-%d %H:%M:%S") - datetime.strptime(
-        expected_time, "%Y-%m-%d %H:%M:%S")).seconds < 5, "Time mismatch in Moscow timezone"
+    assert abs(datetime.strptime(response_time, "%Y-%m-%d %H:%M:%S")
+               - datetime.strptime(expected_time, "%Y-%m-%d %H:%M:%S")
+               ).seconds < 5, "Time mismatch in Moscow timezone"

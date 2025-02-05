@@ -4,6 +4,7 @@ from flask import Flask, render_template
 
 from datetime import datetime
 
+
 # Initialize Flask application
 def init_app():
     app = Flask(__name__)
@@ -18,6 +19,7 @@ def init_app():
         return render_template('index.html', current_time=current_time)
 
     return app
+
 
 if __name__ == '__main__':
     app = init_app()
