@@ -14,8 +14,7 @@ COPY requirements.txt requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application files (main script and templates) to the container
-COPY main.py main.py
-COPY templates/ templates/
+COPY src/ src/
 
 # Adjust ownership of the /app directory to the non-root user
 RUN chown -R appuser:appgroup /app
