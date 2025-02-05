@@ -84,5 +84,3 @@ jobs:
           file: ./app_python/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/app_python:latest
-          cache-from: type=local,src=/tmp/.buildx-cache
-          cache-to: type=local,dest=/tmp/.buildx-cache
