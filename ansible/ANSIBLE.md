@@ -111,3 +111,50 @@ Sample output:
   |--@ungrouped:
   |  |--master_vm
 ```
+
+## Application Deployment with a new role
+
+`ansible-playbook playbooks/dev/main.yaml`
+
+```bash
+PLAY [Install and Configure Docker, Run the Web App] **********************************************************
+
+TASK [Gathering Facts] ****************************************************************************************
+ok: [master_vm]
+
+TASK [docker : Install prerequisites for Docker] **************************************************************
+ok: [master_vm]
+
+TASK [docker : Add Docker's official GPG key] *****************************************************************
+ok: [master_vm]
+
+TASK [docker : Set up the Docker repository] ******************************************************************
+ok: [master_vm]
+
+TASK [docker : Install Docker CE] *****************************************************************************
+ok: [master_vm]
+
+TASK [docker : Download Docker Compose] ***********************************************************************
+ok: [master_vm]
+
+TASK [docker : Enable and start Docker] ***********************************************************************
+ok: [master_vm]
+
+TASK [docker : Add user to docker group] **********************************************************************
+ok: [master_vm]
+
+TASK [web_app : Create application directory] *****************************************************************
+ok: [master_vm]
+
+TASK [web_app : Deploy Docker Compose template] ***************************************************************
+ok: [master_vm]
+
+TASK [web_app : Ensure Docker image is pulled] ****************************************************************
+ok: [master_vm]
+
+TASK [web_app : Run Python application container] *************************************************************
+ok: [master_vm]
+
+PLAY RECAP ****************************************************************************************************
+master_vm                  : ok=12   changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+```
